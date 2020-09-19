@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n=789;
+
+	while(n)
+	{
+		
+
+	int remainder=n%10;
+	n=n/10;
+	cout<<remainder<<"\n";
+	}
+
+}
