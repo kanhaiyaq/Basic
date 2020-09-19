@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n=101,result=0,b=1;
+	while(n)
+	{
+		int remainder=n%10;
+		result=result+remainder*b;
+		b=b*2;
+		n=n/10;
+	}
+	cout<<result;
+	
+}
