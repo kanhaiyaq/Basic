@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int num=798,factor=1;
+int temp = num;
+while(temp)
+{
+    temp=temp/10;
+    factor = factor*10;
+}
+while(factor>1)
+{
+    factor = factor/10;
+    printf("%d\t",num/factor);
+    num = num % factor;
+}
+}
